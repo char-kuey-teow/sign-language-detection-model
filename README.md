@@ -62,14 +62,3 @@ python .\check.py --model .\sign_language_model.tflite --labels .\label_mapping.
 Conversion tips:
 - Convert Keras/TF model to TFLite with quantization for smaller size and faster inference (if not already quantized).
 - Use `tensorflowjs_converter` to serve model in web apps; for mobile, bundle the `.tflite` directly.
-
-## Notes & Next Steps
-- Inspect `label_mapping.json` to confirm class labels and ordering used during training.
-- If you want, I can:
-  - Add a `requirements.txt` or `environment.yml` for reproducible installs.
-  - Create a short Android example showing how to load the `.tflite` model.
-  - Convert the `.tflite` model to TFJS format and include a demo web page.
-
-## License & Contact
-- Add your preferred license file (e.g., `LICENSE`) if you plan to share this publicly.
-- For questions or to extend the README with platform-specific examples, open an issue or ask here.
